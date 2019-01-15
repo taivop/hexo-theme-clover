@@ -3,7 +3,7 @@ $brand-color: #f0534e;
   margin: 64px 0 80px;
   padding: 80px 100px 0;
   background-color: white;
-  color: #333;
+  color: $dark-grey;
   font-size: 16px;
   line-height: 30px;
   > .title {
@@ -35,7 +35,7 @@ $brand-color: #f0534e;
       overflow: auto;;
       padding: 0;
       margin-bottom: 15px;
-      color: #333;
+      color: $dark-grey;
       background: #f8f8f8;
       .gutter {
         text-align: right;

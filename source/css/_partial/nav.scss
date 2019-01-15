@@ -5,8 +5,8 @@
     > .title {
       font-size: 45px;
       line-height: 53px;
-      color: #333;
-      font-family: MaturaScriptCapitals;
+      color: $primary-orange;
+      font-family: "Allerta Stencil";
       &:hover {
         opacity: .7;
       }
@@ -28,11 +28,18 @@
       }
     }
   }
+
+  .icons {
+      > a {
+        color: $dark-grey;
+      }
+  }
+
   .nav-menu {
     font-family: BebasNeue;
     font-size: 20px;
     line-height: 24px;
-    color: #333;
+    color: $dark-grey;
     margin-left: 24px;
     &:first-child {
       margin-left: 0;
@@ -46,7 +53,7 @@
         right: 0;
         bottom: -4px;
         height: 2px;
-        background-color: #333;
+        background-color: $dark-grey;
       }
     }
     @media screen and (max-width: 600px){
