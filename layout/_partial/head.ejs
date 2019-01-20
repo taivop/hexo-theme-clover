@@ -18,10 +18,16 @@
   } else if (is_tag()){
     title = __('tag') + ': ' + page.tag;
   }
+
+
+  var photo = '/images/20midagi-profile.png';
+  if (page.photos && [0]) { 
+    photo = page.photos[0];
+  }
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id, image: photo}) %>
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
